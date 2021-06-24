@@ -10,7 +10,6 @@
 ##  cachesolve should retrieve the inverse from the cache.
 
 ## This function creates a special square matrix in list form.
-
 makeCacheMatrix <- function(x = matrix()) {
   inverse <- NULL
   set <- function(y) {
@@ -28,7 +27,6 @@ makeCacheMatrix <- function(x = matrix()) {
 
 ## This function checked to see if the inverse of the matrix has been cached or
 ##it calculates the inverse of a matrix if it has not been cached.
-
 cacheSolve <- function(x, ...) {
   inverse <- x$getinverse()
   if(!is.null(inverse)) {
